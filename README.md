@@ -2,20 +2,23 @@
 
 ## To be done
 - Training of model
-    - split data for training, testing and validation (7-2-1)
-    - implement validation
-    - choose a model ;)
+    - [x] split data for training, validation and tesing (7-2-1) and implement testing - see CNN_training_iceberg_ship.ipynb on main branch
+    - [x] test different optimizers - see CNN_test_different_optimizers.ipynb on CNN_trial_and_error branch
+    - [ ] test different 3rd bands (HH-HV, ratios, etc.)
+    - [ ] choose a model ;)
 
 - Object detection
-    - Check how the model performs with our testscenes
-        - Check how the model performs if the extracted 75x75 subset contains multiple objects. I don't know how often this will happen in real life, but the model has not been trained to such images...
-    - Add class labels, probabilities of prediction and legend to the last plot.
-    - Plot some real (projected) maps with (e.g. with cartopy)
+    - [ ] Check how the model performs with our testscenes
+        - [ ] Check how the model performs if the extracted 75x75 subset contains multiple objects. I don't know how often this will happen in real life, but the model has not been trained to such images...
+    - [ ] Add class labels, probabilities of prediction and legend to the last plot.
+    - [ ] Plot some real (projected) maps with (e.g. with cartopy)
     
-- Find test scenes, process them and check for plausibility
-    - Ask for recent position data of Polarstern
+- Testing with real-life data
+    - [ ] Get recent position data of Polarstern or other vessels
+    - [ ] Find test scenes, process them and check for plausibility
 
-- Prepare for review during next seminar (What do we have to do/present exactly?)
+- Review in next seminar (January 5th)
+    - [ ] What do we have to present/prepare exactly?
 
 ## Links
 
