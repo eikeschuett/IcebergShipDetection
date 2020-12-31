@@ -2,8 +2,9 @@
 
 ## To be done
 - Training of model
+    - [x] Test different filters for initital image denoising. - see CNN_test_different_speckle_filters.ipynb on CNN_Trial_and_Error branch. **Results:** Not much difference in training results, but bilateral filter and Lee appear to denoise best. Bilateral is quite slow, so use **&rarr; Lee filter** 
     - [x] split data for training, validation and tesing (7-2-1) and implement testing - see CNN_training_iceberg_ship.ipynb on main branch
-    - [x] test different optimizers - see CNN_test_different_optimizers.ipynb on CNN_trial_and_error branch
+    - [x] test different optimizers - see CNN_test_different_optimizers.ipynb on CNN_Trial_and_Error branch
     - [ ] test different 3rd bands (HH-HV, ratios, etc.)
     - [ ] choose a model ;)
 
