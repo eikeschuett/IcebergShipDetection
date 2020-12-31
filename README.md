@@ -6,17 +6,18 @@
     - [x] split data for training, validation and tesing (7-2-1) and implement testing - see CNN_training_iceberg_ship.ipynb on main branch
     - [x] test different optimizers - see CNN_test_different_optimizers.ipynb on CNN_Trial_and_Error branch. **Results:** Curves of the loss of SGD+Nesterov and RMSprop is quite jaggy. Adam learns fast in the beginning but shows overfitting after approx. 250 to 300 epochs. SGD needs more epochs to get nice results, but it curves look the best after 500 epochs. Test accuracy: Adam: 0.83, SGD: 0.87, SGD+Nesterov: 0.89, RMSprop: 0.86. **Use either SGD or Adam with higher dropouts to prevent overfitting**
     - [ ] test different 3rd bands (HH-HV, ratios, etc.)
+    - [ ] review model architecture
     - [ ] choose a model ;)
 
 - Object detection
-    - [ ] Check how the model performs with our testscenes
-        - [ ] Check how the model performs if the extracted 75x75 subset contains multiple objects. I don't know how often this will happen in real life, but the model has not been trained to such images...
     - [ ] Add class labels, probabilities of prediction and legend to the last plot.
-    - [ ] Plot some real (projected) maps with (e.g. with cartopy)
+    - [ ] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
+    - [ ] Check how the model performs with our testscenes
     
 - Testing with real-life data
     - [ ] Get recent position data of Polarstern or other vessels
     - [ ] Find test scenes, process them and check for plausibility
+    - [ ] Check how the model performs if the extracted 75x75 subset contains multiple objects. I don't know how often this will happen in real life, but the model has not been trained to such images...
 
 - Review in next seminar (January 5th)
     - [ ] What do we have to present/prepare exactly?
