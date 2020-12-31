@@ -4,7 +4,7 @@
 - Training of model
     - [x] Test different filters for initital image denoising. - see CNN_test_different_speckle_filters.ipynb on CNN_Trial_and_Error branch. **Results:** Not much difference in training results, but bilateral filter and Lee appear to denoise best. Bilateral is quite slow, so use **&rarr; Lee filter** 
     - [x] split data for training, validation and tesing (7-2-1) and implement testing - see CNN_training_iceberg_ship.ipynb on main branch
-    - [x] test different optimizers - see CNN_test_different_optimizers.ipynb on CNN_Trial_and_Error branch
+    - [x] test different optimizers - see CNN_test_different_optimizers.ipynb on CNN_Trial_and_Error branch. **Results:** Curves of the loss of SGD+Nesterov and RMSprop is quite jaggy. Adam learns fast in the beginning but shows overfitting after approx. 250 to 300 epochs. SGD needs more epochs to get nice results, but it curves look the best after 500 epochs. Test accuracy: Adam: 0.83, SGD: 0.87, SGD+Nesterov: 0.89, RMSprop: 0.86. **Use either SGD or Adam with higher dropouts to prevent overfitting**
     - [ ] test different 3rd bands (HH-HV, ratios, etc.)
     - [ ] choose a model ;)
 
