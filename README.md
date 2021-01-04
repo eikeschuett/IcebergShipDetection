@@ -21,9 +21,9 @@
 
 - Peer review in next seminar (January 5th): 
     - [x] Prepare short descriptions for the project
-        - Topic of the project: Iceberg and ship detection in satellite imagery
-        - Details of the project: The dataset in our project is obtained from Kaggle challenge, [Statoil/C-CORE Iceberg Classifier](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge), each image has 75x75 pixels with two bands from HH and HV polarisations at certain incident angle. 
-         - Goals of the project: The project plans to reach the goal of detecting whether an image contains a ship or an iceberg in Sentinel-1 SAR imagery, which is pre-processed with Sentinel Application Platform (SNAP) Python API ourselves.
+        - Topic: Iceberg and ship detection in satellite imagery
+        - Details: The dataset in our project is obtained from Kaggle challenge, [Statoil/C-CORE Iceberg Classifier](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge), each image has 75x75 pixels with two bands from HH and HV polarisations at certain incident angle. 
+         - Goals: The project plans to reach the goal of detecting whether an image contains a ship or an iceberg in Sentinel-1 SAR imagery, which is pre-processed with Sentinel Application Platform (SNAP) Python API ourselves.
 
 ## Links
 
