@@ -28,8 +28,9 @@
 ## Links
 
 ### Preprocessing with Snappy
-**[Some code on Github](https://github.com/wajuqi/Sentinel-1-preprocessing-using-Snappy)**
-**[ESA Webinar](https://www.youtube.com/watch?v=PiU68g3WRIY)**
+- **[Some code on Github](https://github.com/wajuqi/Sentinel-1-preprocessing-using-Snappy)**
+- **[ESA Webinar](https://www.youtube.com/watch?v=PiU68g3WRIY)**
+- [Suggesting processing workflow with SNAPPY on step forum](https://forum.step.esa.int/t/radiometric-geometric-correction-workflow/2540/35)
 
 ### Object Detection and Models
 **[Short article and code of another solution for the kaggle contest on towardsdatascience.com](https://towardsdatascience.com/deep-learning-for-iceberg-detection-in-satellite-images-c667acf4bad0)**
