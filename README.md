@@ -19,8 +19,10 @@
     - [ ] Find test scenes, process them and check for plausibility
     - [ ] Check how the model performs if the extracted 75x75 subset contains multiple objects. I don't know how often this will happen in real life, but the model has not been trained to such images...
 
-- Review in next seminar (January 5th)
-    - [ ] What do we have to present/prepare exactly?
+- Peer review in next seminar (January 5th): prepare short descriptions for the project
+    - [V] Topic of the project: Iceberg and ship detection in satellite imagery
+    - [V] Details of the project: The dataset in our project is obtained from Kaggle challenge, [Statoil/C-CORE Iceberg Classifier](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge), each image has 75x75 pixels with two bands from HH and HV polarisations at certain incident angle. 
+    - [V] Goals of the project: The project plans to reach the goal of detecting whether an image contains a ship or an iceberg in Sentinel-1 SAR imagery, which is pre-processed with Sentinel Application Platform (SNAP) Python API ourselves.
 
 ## Links
 
