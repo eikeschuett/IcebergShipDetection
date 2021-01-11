@@ -9,7 +9,11 @@
     - [ ] review model architecture
     - [ ] choose a model ;)
 
+- Processing of S1-Scenes
+    - [ ] Get .tif of localInclinationAngle during LandSeaMasking    
+
 - Object detection
+    - [ ] Import inclination angle, normalize it and feed it into the model
     - [ ] Add class labels, probabilities of prediction and legend to the last plot.
     - [ ] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
     - [ ] Check how the model performs with our testscenes
