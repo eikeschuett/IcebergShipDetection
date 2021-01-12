@@ -46,8 +46,8 @@
     - **[Using Sentinel-1 SAR images for Object Detection and Classification](https://www.researchgate.net/publication/342681947_Ship-Iceberg_Detection_and_Classification_in_Sentinel-1_SAR_Images)**
     
     **Notes**
-    Calculating total backscatter and cross-polarisation ratio:\n
-    total backscatter: H = HH + HV\n
+    Calculating total backscatter and cross-polarisation ratio:\\
+    total backscatter: H = HH + HV
     cross-polarisation ratio: C = HV / H\n
 
 - **[Ship detection in Sentinel-2 RGBs](https://medium.com/the-downlinq/object-detection-in-satellite-imagery-a-low-overhead-approach-part-i-cbd96154a1b7)**
