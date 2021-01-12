@@ -40,13 +40,16 @@
 - [Suggesting processing workflow with SNAPPY on step forum](https://forum.step.esa.int/t/radiometric-geometric-correction-workflow/2540/35)
 
 ### Object Detection and Models
-**[Short article and code of another solution for the kaggle contest on towardsdatascience.com](https://towardsdatascience.com/deep-learning-for-iceberg-detection-in-satellite-images-c667acf4bad0)**
+- **[Short article and code of another solution for the kaggle contest on towardsdatascience.com](https://towardsdatascience.com/deep-learning-for-iceberg-detection-in-satellite-images-c667acf4bad0)**
+- **Ship-Iceberg Classification**
+    - **[Using SAR and Multispectral Satellite Images with SVM and CNN(Heiselberg 2020)](https://www.mdpi.com/776368)**
+    - **[Using Sentinel-1 SAR images for Object Detection and Classification](https://www.researchgate.net/publication/342681947_Ship-Iceberg_Detection_and_Classification_in_Sentinel-1_SAR_Images)**
+    **Notes**
+    Calculating total backscatter and cross-polarisation ratio:
+    total backscatter: H = HH + HV
+    cross-polarisation ratio: C = HV / H
 
-**[Paper on this topic (Heiselberg 2020)](https://www.mdpi.com/776368)**
-
-**[Almost the same paper (?), but in a differnet journal](https://www.researchgate.net/publication/342681947_Ship-Iceberg_Detection_and_Classification_in_Sentinel-1_SAR_Images)**
-
-**[Ship detection in Sentinel-2 RGBs](https://medium.com/the-downlinq/object-detection-in-satellite-imagery-a-low-overhead-approach-part-i-cbd96154a1b7)**
+- **[Ship detection in Sentinel-2 RGBs](https://medium.com/the-downlinq/object-detection-in-satellite-imagery-a-low-overhead-approach-part-i-cbd96154a1b7)**
 
 
 
