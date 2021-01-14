@@ -11,12 +11,13 @@
     - [ ] Model fine tuning if one of you is bored ;)
 
 - Processing of S1-Scenes
-    - [ ] Fix it and get it to work
-    - [ ] Get .tif of localInclinationAngle during LandSeaMasking    
+    - [ ] Update description and delete Proj string
+    - [ ] Upload current version
 
 - Object detection
-    - [ ] Import inclination angle, normalize it and feed it into the model
-    - [ ] Add class labels, probabilities of prediction and legend to the last plot.
+    - [ ] Import inclination angle .tif, and feed it into the model (no normalization needed, this is done in a lambda layer in the model)
+    - [ ] create tables containing geo-coordinates and object type after prediction
+    - [ ] Add class labels, probabilities of prediction and legend to the last plot
     - [ ] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
     - [ ] Check how the model performs with our testscenes
     
