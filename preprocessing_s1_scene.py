@@ -25,10 +25,9 @@ This code will work with the original downloaded satellite scenes (.zip) and
 unzip it on the fly.
 
 The preprocessing contains the following steps: Apply an orbit file, take a subset
-of the satellite scene, do calibration and terrain correction, convert to dB
-and apply a land-sea-mask, so that land areas are flagged. This step requires
-a shapefile of the water area (e.g.  from 
-https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-ocean/).
+of the satellite scene, do calibration, convert to dBand apply a land-sea-mask, 
+so that land areas are flagged. This step requires a shapefile of the water area 
+(e.g.  from https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-ocean/).
 
 Output of this preprocessing is a zip-file which contains 5 tif-files:
     - Sigma0_HH_db
@@ -80,8 +79,9 @@ mask_path    = wdir + "ne_10m_ocean/"
 mask_file    = "ne_10m_ocean.shp"
 
 # Set proj-string for terrain correction. The scene will be reprojected to this CRS.
+# Only required if terrain correction is carried out. Currently not needed
 # For Disko Bay Area (UTM Zone 22):
-proj = '''PROJCS["UTM Zone 22 / World Geodetic System 1984", GEOGCS["World Geodetic System 1984", DATUM["World Geodetic System 1984", SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], AUTHORITY["EPSG","6326"]], PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], UNIT["degree", 0.017453292519943295], AXIS["Geodetic longitude", EAST], \r\n    AXIS["Geodetic latitude", NORTH]], PROJECTION["Transverse_Mercator"], PARAMETER["central_meridian", -51.0], PARAMETER["latitude_of_origin", 0.0], PARAMETER["scale_factor", 0.9996], PARAMETER["false_easting", 500000.0], PARAMETER["false_northing", 0.0], \r\n  UNIT["m", 1.0], AXIS["Easting", EAST], AXIS["Northing", NORTH]]'''
+# proj = '''PROJCS["UTM Zone 22 / World Geodetic System 1984", GEOGCS["World Geodetic System 1984", DATUM["World Geodetic System 1984", SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], AUTHORITY["EPSG","6326"]], PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], UNIT["degree", 0.017453292519943295], AXIS["Geodetic longitude", EAST], \r\n    AXIS["Geodetic latitude", NORTH]], PROJECTION["Transverse_Mercator"], PARAMETER["central_meridian", -51.0], PARAMETER["latitude_of_origin", 0.0], PARAMETER["scale_factor", 0.9996], PARAMETER["false_easting", 500000.0], PARAMETER["false_northing", 0.0], \r\n  UNIT["m", 1.0], AXIS["Easting", EAST], AXIS["Northing", NORTH]]'''
 # String for Svalbard Area (UTM Zone 33):
 # proj = '''PROJCS["UTM Zone 33 / World Geodetic System 1984" ,GEOGCS["World Geodetic System 1984", DATUM["World Geodetic System 1984", SPHEROID["WGS 84", 6378137.0, 298.257223563, AUTHORITY["EPSG","7030"]], AUTHORITY["EPSG","6326"]], PRIMEM["Greenwich", 0.0, AUTHORITY["EPSG","8901"]], UNIT["degree", 0.017453292519943295], AXIS["Geodetic longitude", EAST], \r\n    AXIS["Geodetic latitude", NORTH]], PROJECTION["Transverse_Mercator"], PARAMETER["central_meridian", 15.0], PARAMETER["latitude_of_origin", 0.0], PARAMETER["scale_factor", 0.9996], PARAMETER["false_easting", 500000.0], PARAMETER["false_northing", 0.0], \r\n  UNIT["m", 1.0], AXIS["Easting", EAST], AXIS["Northing", NORTH]]'''			    
 
