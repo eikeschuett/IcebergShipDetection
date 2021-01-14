@@ -11,8 +11,8 @@
     - [ ] Model fine tuning if one of you is bored ;)
 
 - Processing of S1-Scenes
-    - [ ] Update description and delete Proj string
-    - [ ] Upload current version
+    - [x] Update description and delete Proj string
+    - [x] Upload current version
 
 - Object detection
     - [ ] Import inclination angle .tif, and feed it into the model (no normalization needed, this is done in a lambda layer in the model)
