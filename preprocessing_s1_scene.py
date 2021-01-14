@@ -76,7 +76,7 @@ height = 1000 # 1051
 # By default, SNAP uses a DEM, but most DEMs don't work in very high latitudes.
 # This shapefile is not ideal in terms of spatial resolution and accuracy but still better than nothing.
 # It is available at https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-ocean/. 
-mask_path    = "Data/Testscenes/ne_10m_ocean/"
+mask_path    = wdir + "ne_10m_ocean/"
 mask_file    = "ne_10m_ocean.shp"
 
 # Set proj-string for terrain correction. The scene will be reprojected to this CRS.
@@ -207,6 +207,17 @@ def band_to_np(product,band):
     data.shape  = h, w
     return data
 
+def TpGrid_to_np(product,TpGrid):
+    '''Converts a snappy band into a numpy array.'''
+    TpGrid      = product.getTiePointGrid(TpGrid)
+    w           = TpGrid.getRasterWidth()
+    h           = TpGrid.getRasterHeight()
+    data        = np.zeros(w * h, dtype=np.float32)
+    #Get Data from whole scene and write it into data array
+    TpGrid.readPixels(0, 0, w, h, data)
+    data.shape  = h, w
+    return data
+
 def get_tempfile_name(some_id):
     return os.path.join(tempfile.gettempdir(), next(tempfile._get_candidate_names()) + "_" + some_id)
 
@@ -274,13 +285,13 @@ product     = apply_orbit_file(product)
 
 product     = subset(product, x, y, width, height)
 
+# Save the local incidence angle because it will be lost in the next processing steps
+inc_angle  = TpGrid_to_np(product,"incident_angle")
+Image.fromarray(inc_angle).save(exp_dir + "/" + file[:-4] + 'cal_ter_db_UTM_msk_projectedLocalIncidenceAngle_test.tif')
+
 product     = calibration(product, polarization, pols)
 
-product     = terrain_correction(product, proj, 0)
-
-# Save the local incidence angle because it will be lost in the next processing steps
-band = band_to_np(product, 'projectedLocalIncidenceAngle')
-Image.fromarray(band).save(exp_dir + "/" + file[:-4] + 'cal_ter_db_UTM_msk_projectedLocalIncidenceAngle_test.tif')
+#p2     = terrain_correction(product, proj, 0)
 
 product     = convert_dB(product)
 
@@ -322,7 +333,7 @@ bands = ['Sigma0_HH_db', 'Sigma0_HV_db', 'lat', 'lon']
 # Export each band into separate .tifs
 for i, band_str in enumerate(bands):
     band = band_to_np(product, band_str)
-    Image.fromarray(band).save(exp_dir + "/" + file[:-4] + 'cal_ter_db_UTM_msk_' + band_str + '.tif')
+    Image.fromarray(band).save(exp_dir + "/" + file[:-4] + '_cal_ter_db_UTM_msk_' + band_str + '.tif')
 
 
 # Define filename for the final zip file
