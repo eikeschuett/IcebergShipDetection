@@ -214,7 +214,8 @@ def TpGrid_to_np(product,TpGrid):
     h           = TpGrid.getRasterHeight()
     data        = np.zeros(w * h, dtype=np.float32)
     #Get Data from whole scene and write it into data array
-    TpGrid.readPixels(0, 0, w, h, data)
+    data = TpGrid.readPixels(0, 0, w, h, data)
+    data = np.array(data)
     data.shape  = h, w
     return data
 
@@ -286,8 +287,8 @@ product     = apply_orbit_file(product)
 product     = subset(product, x, y, width, height)
 
 # Save the local incidence angle because it will be lost in the next processing steps
-inc_angle  = TpGrid_to_np(product,"incident_angle")
-Image.fromarray(inc_angle).save(exp_dir + "/" + file[:-4] + 'cal_ter_db_UTM_msk_projectedLocalIncidenceAngle_test.tif')
+inc_angle   = TpGrid_to_np(product,"incident_angle")
+Image.fromarray(inc_angle).save(exp_dir + "/" + file[:-4] + '_cal_ter_db_UTM_msk_IncidenceAngle.tif')
 
 product     = calibration(product, polarization, pols)
 
