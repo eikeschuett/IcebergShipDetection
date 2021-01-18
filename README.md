@@ -45,6 +45,7 @@
     - [ ] Testing real world data - the processing procedures descriptions
     - [ ] Testing real world data - training results 
     - [ ] Testing real world data - plot on the map
+    - [ ] Baselines - how to measure the performance / compare with others
   
 ## Links
 
