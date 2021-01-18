@@ -36,7 +36,7 @@
 - A detailed Jupyter Notebook with code and comment for the final presentation
     - [x] Introduction: an overview of the project objectives and details
     - [x] Dataset: write some desciptions of the kaggle dataset structure and display some sample images
-    - [ ] Method: the processing procedures in this project - the concept of normalization; testing different filters, optimizers and generations of the 3rd bands
+    - [x] Method: the processing procedures in this project - the concept of normalization; testing different filters, optimizers and generations of the 3rd bands
     - [x] Outline of different programms and the definition of the environment
     - [x] Program - Download dataset from Kaggle
     - [x] Program - Build up the CNN Architecture
