@@ -15,9 +15,9 @@
     - [x] Upload current version
 
 - Object detection
-    - [ ] Import incidence angle .tif, and feed it into the model (no normalization needed, this is done in a lambda layer in the model)
-    - [ ] create tables containing geo-coordinates and object type after prediction
-    - [ ] Add class labels, probabilities of prediction and legend to the last plot
+    - [x] Import incidence angle .tif, and feed it into the model (no normalization needed, this is done in a lambda layer in the model)
+    - [x] create tables containing geo-coordinates and object type after prediction
+    - [x] Add class labels, probabilities of prediction and legend to the last plot
     - [ ] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
     - [ ] Check how the model performs with our testscenes
     
