@@ -42,6 +42,23 @@
     - [ ] Testing real world data - plot on the map
     - [ ] Baselines - how to measure the performance / compare with others
   
+## Testscenes and AIS Ship Positions
+- Dikso Bay
+    - S1A_IW_GRDH_1SDH_20210115T100027_20210115T100052_036147_043CF4_049C
+        - Other Type/Auxillary N69°08.750' W53°39.933'
+        - Fishing Vessel N68°45.080' W51°20.846'
+
+    - S1B_IW_GRDH_1SDH_20210114T100803_20210114T100828_025149_02FE89_234D
+        - Other Type/Auxillary N69°05.990' W53°18.654'
+        - Fishing Vessel N68°51.626' W52°47.673'
+        - Other Type/Auxillary N69°23.972' W51°36.317'
+        - Fishing Vessel N68°43.877' W51°30.219'
+        - Fishing Vessel N68°43.825' W51°21.114'
+        - Cargo Ship N76°28.180' W54°08.052'
+- Svalbard
+    - S1B_IW_GRDH_1SDH_20210108T154500_20210108T154525_025065_02FBC6_38D2 (contains only a tanker and no icebergs)
+        - Tanker N78°12.417' E14°32.650'
+  
 ## Links
 
 ### Preprocessing with Snappy
