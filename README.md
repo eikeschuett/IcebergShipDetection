@@ -1,5 +1,8 @@
 # IcebergShipDetection
-
+- Topic: Iceberg and ship detection in satellite imagery
+- Goals: The project goal is to build an algorithm for the detection of ships and icebergs in Sentinel-1 SAR imagery. Desired output is a map, which shows the locations of icebergs, ships and unidentified objects.
+- Details: The dataset used for training is obtained from a Kaggle challenge, [Statoil/C-CORE Iceberg Classifier](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge). Each image has 75x75 pixels with two bands from HH and HV polarisations and contains a ship or an iceberg. This dataset will be used to train a CNN.
+        After training the classification model, we will use Sentinel-1 SAR images to show the "real world application" of our model. The satellite images will be pre-processed with the Sentinel Application Platform (SNAP) Python API. We will then identify bright objects within each satellite image. A 75x75 subset of the radar image will be made for each object and fed into our classification model. Finally, the results will be plotted on a map.
 ## To be done
 - Training of model
     - [x] Test different filters for initital image denoising. - see CNN_test_different_speckle_filters.ipynb on CNN_Trial_and_Error branch. **Results:** Not much difference in training results, but bilateral filter and Lee appear to denoise best. Bilateral is quite slow, so use **&rarr; Lee filter** 
@@ -18,20 +21,12 @@
     - [x] Import incidence angle .tif, and feed it into the model (no normalization needed, this is done in a lambda layer in the model)
     - [x] create tables containing geo-coordinates and object type after prediction
     - [x] Add class labels, probabilities of prediction and legend to the last plot
-    - [ ] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
+    - [x] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
     - [ ] Check how the model performs with our testscenes
     
 - Testing with real-life data
-    - [ ] Get recent position data of Polarstern or other vessels
-    - [ ] Find test scenes, process them and check for plausibility
-    - [ ] Check how the model performs if the extracted 75x75 subset contains multiple objects. I don't know how often this will happen in real life, but the model has not been trained to such images...
-
-- Peer review in next seminar (January 5th): 
-    - [x] Prepare short descriptions for the project
-        - Topic: Iceberg and ship detection in satellite imagery
-         - Goals: The project goal is to build an algorithm for the detection of ships and icebergs in Sentinel-1 SAR imagery. Desired output is a map, which shows the locations of icebergs, ships and unidentified objects.
-        - Details: The dataset used for training is obtained from a Kaggle challenge, [Statoil/C-CORE Iceberg Classifier](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge). Each image has 75x75 pixels with two bands from HH and HV polarisations and contains a ship or an iceberg. This dataset will be used to train a CNN.
-        After training the classification model, we will use Sentinel-1 SAR images to show the "real world application" of our model. The satellite images will be pre-processed with the Sentinel Application Platform (SNAP) Python API. We will then identify bright objects within each satellite image. A 75x75 subset of the radar image will be made for each object and fed into our classification model. Finally, the results will be plotted on a map.
+    - [x] Find test scenes and process them 
+    - [ ] check for plausibility
 
 - A detailed Jupyter Notebook with code and comment for the final presentation
     - [x] Introduction: an overview of the project objectives and details
