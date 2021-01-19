@@ -12,8 +12,8 @@
     - [x] review model architecture
     - [x] do the normalization of the incidence angle as a lambda layer in the model (because it looks fancy) and change normalization between 0 and 1 to get it to work with the RELU activation function
     - [ ] Model fine tuning if one of you is bored ;)
-                - Try to remove the data without incidence angle provided from the dataset
-                - Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets
+        - Try to remove the data without incidence angle provided from the dataset
+        - Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets
 
 - Processing of S1-Scenes
     - [x] Update description and delete Proj string
