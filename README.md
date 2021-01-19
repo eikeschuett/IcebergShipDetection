@@ -11,9 +11,10 @@
     - [x] test different 3rd bands (HH+HV, ratios, etc.). - see CNN_test_different_3rd_bands.ipynb. I tested HH+HV, HH-HV, HH\*HV, HH/HV, HV-HH, HV/HH. **Results:** Most promising combinations are simple HH+HV and HH/HV. HH/HV has a higher accuracy (acc=0.891, val_acc=0.885) than HH+HV (acc=0.847, val_acc=0.85), but its loss curve is not as smooth as the HH+HV combination. The HH/HV loss curve also indicates some overfitting after around 200 epochs, which is not so pronounced in the HH+HV combination. Experiences after including the incidence angle also suggest that HH+HV is more stable and yields slightly higher accuracies. **Use HH+HV**
     - [x] review model architecture
     - [x] do the normalization of the incidence angle as a lambda layer in the model (because it looks fancy) and change normalization between 0 and 1 to get it to work with the RELU activation function
-    - [ ] Model fine tuning if one of you is bored ;)
-        - Try to remove the data without incidence angle provided from the dataset
-        - Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets
+    - [ ] Model fine tuning if one of you is bored ;) 
+        - [x] Try to remove the data without incidence angle provided from the dataset --> see the first "prepare_data" function
+        - [x] Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets --> see the second "prepare_data" function
+        - others...?!
 
 - Processing of S1-Scenes
     - [x] Update description and delete Proj string
