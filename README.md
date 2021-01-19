@@ -12,6 +12,8 @@
     - [x] review model architecture
     - [x] do the normalization of the incidence angle as a lambda layer in the model (because it looks fancy) and change normalization between 0 and 1 to get it to work with the RELU activation function
     - [ ] Model fine tuning if one of you is bored ;)
+                - Try to remove the data without incidence angle provided from the dataset
+                - Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets
 
 - Processing of S1-Scenes
     - [x] Update description and delete Proj string
@@ -69,8 +71,8 @@
 ### Object Detection and Models
 - **[Short article and code of another solution for the kaggle contest on towardsdatascience.com](https://towardsdatascience.com/deep-learning-for-iceberg-detection-in-satellite-images-c667acf4bad0)**
 - **Ship-Iceberg Classification**
-    - **[Using SAR and Multispectral Satellite Images with SVM and CNN(Heiselberg 2020)](https://www.mdpi.com/776368)**
-    - **[Using Sentinel-1 SAR images for Object Detection and Classification](https://www.researchgate.net/publication/342681947_Ship-Iceberg_Detection_and_Classification_in_Sentinel-1_SAR_Images)**
+    - **[Using SAR and Multispectral Satellite Images with SVM and CNN (Heiselberg 2020)](https://www.mdpi.com/776368)**
+    - **[Using Sentinel-1 SAR images for Object Detection and Classification (Heiselberg 2020)](https://www.researchgate.net/publication/342681947_Ship-Iceberg_Detection_and_Classification_in_Sentinel-1_SAR_Images)**
     
     **Notes**<br>
     Calculating total backscatter and cross-polarisation ratio:<br>
@@ -88,3 +90,4 @@
     - including required sections (Introduction, Data and Methods, Results, Baseline)
 - A small video, accompanying, for example, a screen recording of the notebook with an explanation of the challenge of the project, the used approach, and the results.
 - A statement that the code is released as open source software. The data you use in your project can remain private if you wish.
+- Time: 8 -- 10 minutes
