@@ -14,7 +14,7 @@
     - [ ] Model fine tuning if one of you is bored ;) 
         - [x] Try to remove the data without incidence angle provided from the dataset --> see the first "prepare_data" function
         - [x] Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets --> see the second "prepare_data" function
-        - others...?!
+        - [ ] any other idea?
 
 - Processing of S1-Scenes
     - [x] Update description and delete Proj string
