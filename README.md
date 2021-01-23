@@ -46,7 +46,7 @@
     - [ ] Baselines - how to measure the performance / compare with others
   
 ## Testscenes and AIS Ship Positions
-- Dikso Bay
+- Disko Bay
     - S1A_IW_GRDH_1SDH_20210115T100027_20210115T100052_036147_043CF4_049C
         - Other Type/Auxillary N69°08.750' W53°39.933'
         - Fishing Vessel N68°45.080' W51°20.846'
