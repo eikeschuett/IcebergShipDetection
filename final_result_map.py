@@ -176,7 +176,6 @@ ax.set_title("Iceberg-Ship-Classification at " + file[28:32] + "-" +
 scale_bar(ax, location=(0.15, 0.05))
 
 
-
 ###############################################################################
 #
 # Save the map into the working directory
@@ -184,6 +183,6 @@ scale_bar(ax, location=(0.15, 0.05))
 ###############################################################################
 
 out_file    = 'Map_Iceberg_Ship_Classifier_' + file[11:41] + '.png'
-plt.savefig(out_file, dpi=150)
+plt.savefig(out_file, dpi=150, bbox_inches='tight', pad_inches=0)
 
 
