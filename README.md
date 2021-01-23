@@ -11,10 +11,10 @@
     - [x] test different 3rd bands (HH+HV, ratios, etc.). - see CNN_test_different_3rd_bands.ipynb. I tested HH+HV, HH-HV, HH\*HV, HH/HV, HV-HH, HV/HH. **Results:** Most promising combinations are simple HH+HV and HH/HV. HH/HV has a higher accuracy (acc=0.891, val_acc=0.885) than HH+HV (acc=0.847, val_acc=0.85), but its loss curve is not as smooth as the HH+HV combination. The HH/HV loss curve also indicates some overfitting after around 200 epochs, which is not so pronounced in the HH+HV combination. Experiences after including the incidence angle also suggest that HH+HV is more stable and yields slightly higher accuracies. **Use HH+HV**
     - [x] review model architecture
     - [x] do the normalization of the incidence angle as a lambda layer in the model (because it looks fancy) and change normalization between 0 and 1 to get it to work with the RELU activation function
-    - [ ] Model fine tuning if one of you is bored ;) 
+    - [x] Model fine tuning if one of you is bored ;) 
         - [x] Try to remove the data without incidence angle provided from the dataset --> see the first "prepare_data" function
         - [x] Separate the dataset into with and without incidence angle provided and then split both of them into training/validation/test datasets --> see the second "prepare_data" function
-        - [ ] any other idea?
+        - [x] Use 3 dense layers and an early stopping callback
 
 - Processing of S1-Scenes
     - [x] Update description and delete Proj string
@@ -25,11 +25,11 @@
     - [x] create tables containing geo-coordinates and object type after prediction
     - [x] Add class labels, probabilities of prediction and legend to the last plot
     - [x] Plot some "real" (projected) maps with (e.g. with cartopy) or produce at least tables containing the coordinates of the objects
-    - [ ] Check how the model performs with our testscenes
+    - [x] Check how the model performs with our testscenes
     
 - Testing with real-life data
     - [x] Find test scenes and process them 
-    - [ ] check for plausibility
+    - [x] check for plausibility
 
 - A detailed Jupyter Notebook with code and comment for the final presentation
     - [x] Introduction: an overview of the project objectives and details
@@ -40,9 +40,9 @@
     - [x] Program - Build up the CNN Architecture
     - [x] Program - Train the model: display the charts of loss and accuracy and the accuracy of the model on test data
     - [ ] Testing real world data - overview of some hotspots with iceberg and ship
-    - [ ] Testing real world data - the processing procedures descriptions
-    - [ ] Testing real world data - training results 
-    - [ ] Testing real world data - plot on the map
+    - [x] Testing real world data - the processing procedures descriptions
+    - [x] Testing real world data - training results 
+    - [ ] Testing real world data - plot AIS map
     - [ ] Baselines - how to measure the performance / compare with others
   
 ## Testscenes and AIS Ship Positions
