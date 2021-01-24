@@ -39,10 +39,10 @@
     - [x] Program - Download dataset from Kaggle
     - [x] Program - Build up the CNN Architecture
     - [x] Program - Train the model: display the charts of loss and accuracy and the accuracy of the model on test data
-    - [ ] Testing real world data - overview of some hotspots with iceberg and ship
+    - [x] Testing real world data - overview of some hotspots with iceberg and ship
     - [x] Testing real world data - the processing procedures descriptions
     - [x] Testing real world data - training results 
-    - [ ] Testing real world data - plot AIS map
+    - [x] Testing real world data - plot AIS map
     - [ ] Baselines - how to measure the performance / compare with others
   
 ## Testscenes and AIS Ship Positions
